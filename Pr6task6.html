@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практична робота 6 - Завдання 6</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff7e6; }
+        form { width: 560px; max-width: calc(100% - 32px); margin: 50px auto; padding: 24px; background: white; border: 3px solid #d97706; }
+        h1 { text-align: center; color: #d97706; }
+        label { display: block; margin: 12px 0; }
+        input, textarea { width: 100%; padding: 9px; box-sizing: border-box; }
+        button { padding: 10px 16px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <form action="mailto:teacher@example.com" method="post" enctype="text/plain" onsubmit="alert('Форма буде відправлена на e-mail');">
+        <h1>Відправлення e-mail</h1>
+        <label>Ваше ім'я <input type="text" name="name" required></label>
+        <label>Ваш e-mail <input type="email" name="email" required></label>
+        <label>Тема <input type="text" name="subject" value="Практична робота 6"></label>
+        <label>Повідомлення <textarea name="message" rows="6" required></textarea></label>
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>
